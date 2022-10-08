@@ -1,0 +1,178 @@
+/* Google fonts poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+
+/* Css Reset */
+* {
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; ;
+   
+    /* background-color: #0D1721; */
+    background-color: #292B36;
+}
+
+.main-container {
+    min-height: 80vh;
+    min-width: 100vw;
+       display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* top navbar */
+header {
+    width: 100%;
+    background-color: #0D1721;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.logo-img {
+    height: 90%;
+    cursor: pointer;
+    width: 10%;
+    min-width: 5rem;
+    max-width: 7rem;
+    padding-left: 1rem;
+}
+
+.navbar-title {
+    color: #059862;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+/* top navbar ends here */
+
+.container{
+    margin-top: 2rem;
+    background-color: #38444D;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: column;
+    min-height: 80%;
+    min-width: 60%;
+    max-width: 90%;
+    max-height: 100%;
+}
+
+.display-div {
+    min-height: 70%;
+    max-width: 700px;
+}
+
+.item-display-here {
+    min-width: 500px;
+    min-height: 40vh;
+    height: 100%;
+    background-color: #15202B ;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgb(25, 27, 28) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    /* margin: 10px 0px; */
+    padding: 1rem;
+    font-size: 1.3rem; 
+}
+
+.fa-quote-left {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.item-display-here span {
+    align-self: flex-start;
+    padding: 1rem 0rem;
+     font-size: 1rem;
+     display: block;
+}
+
+.joke-span {
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    background-color: #059862;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #0c744e;
+    color: #15202B ;
+}
+
+
+@media  screen and (max-width : 790px) {
+    .display-div {
+        min-width: 400px;
+        max-width: 400px;
+    }
+   
+    .item-display-here {
+        min-width: 300px;
+    }
+   
+}
+
+@media  screen and (max-width : 500px) {
+
+    .display-div {
+        min-height: 70%;
+        max-width: 90%;
+        min-width: 90%;
+        font-size: 1.1rem;
+    }
+
+    .item-display-here {
+        min-width: 100px;
+        height: 70%;
+        font: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .button-div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    .navbar-title {
+        font-size: 1.2rem;
+    }
+
+}
